@@ -1,7 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>FlaskPlay</title>
+    <title>{% block title %}{% endblock %}</title>
+
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" type="text/css" href="/static/style.css" />
   </head>
   <body>
@@ -9,6 +14,7 @@
       <a href="/profiles">PROFILES</a>
       <a href="/dashboard">DASHBOARD</a>
     </div>
-    {% block content %}{% endblock %}
+    {% block content%}{% endblock %}
+    <footer>This the footer</footer>
   </body>
 </html>
